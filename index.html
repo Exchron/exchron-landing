@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exchron - Exoplanet Exploration Through Machine Learning</title>
+		<meta
+			name="description"
+			content="Classify your Transit data through our state of the art ML Algorithm or create your own classification algorithm"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="header-content">
+				<div class="logo-section">
+					<div class="logo-container">
+						<img
+							src="public/placeholder-logo.svg"
+							alt="Exchron Logo"
+							class="logo-image"
+						/>
+					</div>
+					<h1 class="logo-text">Exchron</h1>
+				</div>
+				<button class="mobile-menu-toggle" aria-label="Toggle menu">
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+				</button>
+				<nav class="nav">
+					<a href="#about" class="nav-link">About</a>
+					<a href="#team" class="nav-link">Team</a>
+					<a href="#docs" class="nav-link">Documentation</a>
+					<a href="#playground" class="nav-cta">Playground</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Mobile Navigation Overlay -->
+		<div class="nav-overlay"></div>
+
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-background">
+				<div class="gradient-bg"></div>
+				<div class="radial-bg"></div>
+			</div>
+
+			<h2 class="hero-title animate-fade-in-up">
+				Exoplanet Exploration<br />
+				Through <span class="gradient-text">Machine Learning</span>
+			</h2>
+			<p class="hero-subtitle animate-fade-in-up animation-delay-200">
+				Classify your Transit data through our state of the art ML Algorithm or
+				create your own classification algorithm
+			</p>
+
+			<div class="hero-buttons animate-fade-in-up animation-delay-400">
+				<button class="btn-secondary">
+					See Documentation
+					<img src="public/arrow-outward.svg" alt="Arrow" class="btn-icon" />
+				</button>
+				<button class="btn-primary">Get Started</button>
+			</div>
+
+			<div class="hero-image animate-fade-in-up animation-delay-600">
+				<img
+					src="public/dashboard-placeholder.svg"
+					alt="Exchron Dashboard"
+					class="dashboard-image"
+				/>
+			</div>
+		</section>
+
+		<!-- Playground Section -->
+		<section class="section playground-section" id="playground">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge">
+						🚀 <span>AI-Powered Classification</span>
+					</div>
+					<h3 class="section-title animate-fade-in-up animation-delay-200">
+						Introducing <span class="text-black">Playground</span>
+					</h3>
+					<p class="section-subtitle animate-fade-in-up animation-delay-400">
+						Classify your newly acquired data with our collection of pre-trained
+						models trained on real NASA data. Get instant results with
+						state-of-the-art machine learning algorithms.
+					</p>
+				</div>
+
+				<div class="features-grid">
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 100ms"
+					>
+						<div class="feature-icon">🤖</div>
+						<div class="feature-number">1</div>
+						<h4 class="feature-title">Select a model from our library</h4>
+						<p class="feature-desc">
+							Choose from CNN, RNN, or Transformer models
+						</p>
+					</div>
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 200ms"
+					>
+						<div class="feature-icon">📊</div>
+						<div class="feature-number">2</div>
+						<h4 class="feature-title">Upload your dataset</h4>
+						<p class="feature-desc">Transit light curves or time-series data</p>
+					</div>
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 300ms"
+					>
+						<div class="feature-icon">⚡</div>
+						<div class="feature-number">3</div>
+						<h4 class="feature-title">Get detailed analysis</h4>
+						<p class="feature-desc">
+							Real-time classification with confidence scores
+						</p>
+					</div>
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 400ms"
+					>
+						<div class="feature-icon">📦</div>
+						<div class="feature-number">4</div>
+						<h4 class="feature-title">Export & integrate</h4>
+						<p class="feature-desc">Download results or use our API</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Classroom Section -->
+		<section class="section classroom-section">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge classroom-badge">
+						🎓 <span>Learn & Build</span>
+					</div>
+					<h3 class="section-title animate-fade-in-up animation-delay-200">
+						Introducing <span class="text-black">Classroom</span>
+					</h3>
+					<p class="section-subtitle animate-fade-in-up animation-delay-400">
+						New to Machine Learning? Create your own machine learning algorithm
+						to classify real world Transit data. Learn by doing with our
+						interactive tutorials and guided projects.
+					</p>
+				</div>
+
+				<div class="features-grid">
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 100ms"
+					>
+						<div class="feature-icon classroom-icon">📁</div>
+						<div class="feature-number classroom-number">1</div>
+						<h4 class="feature-title">Choose your dataset</h4>
+						<p class="feature-desc">
+							Pre-processed NASA data or upload your own
+						</p>
+					</div>
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 200ms"
+					>
+						<div class="feature-icon classroom-icon">🧠</div>
+						<div class="feature-number classroom-number">2</div>
+						<h4 class="feature-title">Select ML algorithm</h4>
+						<p class="feature-desc">
+							Decision trees, neural networks, or ensemble methods
+						</p>
+					</div>
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 300ms"
+					>
+						<div class="feature-icon classroom-icon">📈</div>
+						<div class="feature-number classroom-number">3</div>
+						<h4 class="feature-title">Train & visualize</h4>
+						<p class="feature-desc">
+							Watch your model learn with real-time metrics
+						</p>
+					</div>
+					<div
+						class="feature-card animate-fade-in-up"
+						style="animation-delay: 400ms"
+					>
+						<div class="feature-icon classroom-icon">🚀</div>
+						<div class="feature-number classroom-number">4</div>
+						<h4 class="feature-title">Test & deploy</h4>
+						<p class="feature-desc">
+							Evaluate performance and export your model
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Key Features Section -->
+		<section class="section key-features-section">
+			<div class="container">
+				<h3 class="key-features-title animate-fade-in-up">Key Features</h3>
+
+				<div class="key-features-grid">
+					<div
+						class="key-feature-card animate-fade-in-up"
+						style="animation-delay: 0ms"
+					>
+						<div class="key-feature-icon">🎯</div>
+						<h4 class="key-feature-title">Interactive Models</h4>
+						<p class="key-feature-desc">
+							Build and train models with our intuitive drag-and-drop interface.
+							Real-time feedback helps you understand each step.
+						</p>
+					</div>
+					<div
+						class="key-feature-card animate-fade-in-up"
+						style="animation-delay: 100ms"
+					>
+						<div class="key-feature-icon">⚡</div>
+						<h4 class="key-feature-title">Real-time Training</h4>
+						<p class="key-feature-desc">
+							Watch your models learn in real-time with live visualization of
+							training metrics and performance indicators.
+						</p>
+					</div>
+					<div
+						class="key-feature-card animate-fade-in-up"
+						style="animation-delay: 200ms"
+					>
+						<div class="key-feature-icon">📦</div>
+						<h4 class="key-feature-title">Export Models</h4>
+						<p class="key-feature-desc">
+							Download your trained models in multiple formats including
+							TensorFlow, PyTorch, and ONNX for deployment.
+						</p>
+					</div>
+					<div
+						class="key-feature-card animate-fade-in-up"
+						style="animation-delay: 300ms"
+					>
+						<div class="key-feature-icon">📊</div>
+						<h4 class="key-feature-title">Data Visualization</h4>
+						<p class="key-feature-desc">
+							Explore your datasets with interactive charts, plots, and 3D
+							visualizations to gain deeper insights.
+						</p>
+					</div>
+					<div
+						class="key-feature-card animate-fade-in-up"
+						style="animation-delay: 400ms"
+					>
+						<div class="key-feature-icon">🗃️</div>
+						<h4 class="key-feature-title">Custom Datasets</h4>
+						<p class="key-feature-desc">
+							Upload your own astronomical data or use our curated collection of
+							NASA exoplanet transit datasets.
+						</p>
+					</div>
+					<div
+						class="key-feature-card animate-fade-in-up"
+						style="animation-delay: 500ms"
+					>
+						<div class="key-feature-icon">📚</div>
+						<h4 class="key-feature-title">Learning Resources</h4>
+						<p class="key-feature-desc">
+							Access comprehensive tutorials, documentation, and guided learning
+							paths for all skill levels.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How This Works Section -->
+		<section class="section how-it-works-section">
+			<div class="container">
+				<div class="section-header">
+					<h3 class="section-title animate-fade-in-up">How This Works</h3>
+					<p class="section-subtitle animate-fade-in-up animation-delay-200">
+						Our platform combines cutting-edge machine learning with intuitive
+						design to make exoplanet classification accessible to everyone.
+					</p>
+				</div>
+
+				<div class="how-it-works-content">
+					<div
+						class="how-it-works-visual animate-fade-in-up animation-delay-400"
+					>
+						<div class="ai-analysis-card">
+							<div class="ai-pattern"></div>
+							<div class="ai-content">
+								<h4 class="ai-title">🤖 AI-Powered Analysis</h4>
+								<ul class="ai-features">
+									<li>
+										<span class="bullet"></span>Advanced neural networks trained
+										on NASA Kepler data
+									</li>
+									<li>
+										<span class="bullet"></span>Real-time transit light curve
+										analysis
+									</li>
+									<li>
+										<span class="bullet"></span>Automated feature extraction and
+										classification
+									</li>
+									<li>
+										<span class="bullet"></span>Confidence scoring with
+										uncertainty quantification
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="how-it-works-steps animate-fade-in-up animation-delay-600"
+					>
+						<div class="step">
+							<div class="step-number">01</div>
+							<div class="step-content">
+								<h5 class="step-title">Data Upload</h5>
+								<p class="step-desc">
+									Upload your transit light curve data or select from our
+									curated NASA dataset collection with over 100,000 confirmed
+									signals.
+								</p>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-number">02</div>
+							<div class="step-content">
+								<h5 class="step-title">Model Selection</h5>
+								<p class="step-desc">
+									Choose from pre-trained models or build your own using our
+									drag-and-drop interface with various ML algorithms.
+								</p>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-number">03</div>
+							<div class="step-content">
+								<h5 class="step-title">Training & Analysis</h5>
+								<p class="step-desc">
+									Watch as your model learns patterns and provides real-time
+									insights into exoplanet signals with live visualization.
+								</p>
+							</div>
+						</div>
+						<div class="step">
+							<div class="step-number">04</div>
+							<div class="step-content">
+								<h5 class="step-title">Results & Export</h5>
+								<p class="step-desc">
+									Get detailed classification results with confidence scores and
+									export for further research or integration.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tech-specs animate-fade-in-up">
+					<h4 class="tech-specs-title">Technical Specifications</h4>
+					<div class="tech-specs-grid">
+						<div class="tech-spec">
+							<div class="tech-spec-icon">⚡</div>
+							<h5 class="tech-spec-title">Processing Speed</h5>
+							<p class="tech-spec-desc">
+								&lt; 5 seconds per light curve classification
+							</p>
+						</div>
+						<div class="tech-spec">
+							<div class="tech-spec-icon">🎯</div>
+							<h5 class="tech-spec-title">Accuracy</h5>
+							<p class="tech-spec-desc">
+								97.3% accuracy on NASA validation dataset
+							</p>
+						</div>
+						<div class="tech-spec">
+							<div class="tech-spec-icon">🔧</div>
+							<h5 class="tech-spec-title">Compatibility</h5>
+							<p class="tech-spec-desc">
+								Supports FITS, CSV, and JSON data formats
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- In Action Section -->
+		<section class="section in-action-section">
+			<div class="container">
+				<h3 class="in-action-title">In Action</h3>
+
+				<div class="demo-container">
+					<div class="demo-image demo-1"></div>
+					<div class="demo-image demo-2"></div>
+					<div class="demo-image demo-3"></div>
+					<div class="demo-image demo-4"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our Team Section -->
+		<section class="section team-section" id="team">
+			<div class="container">
+				<h3 class="team-title">Our Team</h3>
+
+				<div class="team-members">
+					<div class="team-member">
+						<div class="member-photo">
+							<img src="public/team-circle.svg" alt="" class="team-circle" />
+							<img
+								src="public/profile-placeholder.svg"
+								alt="Navida Jayaweera"
+								class="profile-image"
+							/>
+						</div>
+						<h4 class="member-name">Navida Jayaweera</h4>
+						<p class="member-desc">
+							Full Stack Developer<br />Machine Learning Engineer<br />NASA
+							Space Apps Participant
+						</p>
+					</div>
+					<div class="team-member">
+						<div class="member-photo">
+							<img src="public/team-circle.svg" alt="" class="team-circle" />
+							<img
+								src="public/profile-placeholder.svg"
+								alt="Team Member"
+								class="profile-image"
+							/>
+						</div>
+						<h4 class="member-name">Team Member</h4>
+						<p class="member-desc">
+							Data Scientist<br />Exoplanet Researcher<br />ML Algorithm
+							Specialist
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="section faq-section">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge">❓ <span>Got Questions?</span></div>
+					<h3 class="section-title animate-fade-in-up animation-delay-200">
+						Frequently Asked Questions
+					</h3>
+					<p class="section-subtitle animate-fade-in-up animation-delay-400">
+						Everything you need to know about Exchron and exoplanet
+						classification
+					</p>
+				</div>
+
+				<div class="faq-container">
+					<div class="faq-item" data-faq="0">
+						<button class="faq-question">
+							<span
+								>How does the machine learning algorithm classify
+								exoplanets?</span
+							>
+							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M6 9l6 6 6-6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-divider"></div>
+							<p>
+								Our ML algorithms use deep neural networks trained on NASA's
+								Kepler and TESS mission data. The system analyzes transit light
+								curves - the dimming patterns when a planet passes in front of
+								its star. We employ convolutional neural networks (CNNs) to
+								detect these subtle patterns and classify them as planetary
+								signals or false positives with 97.3% accuracy.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item" data-faq="1">
+						<button class="faq-question">
+							<span>What kind of data can I upload to the platform?</span>
+							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M6 9l6 6 6-6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-divider"></div>
+							<p>
+								You can upload various formats including FITS files from space
+								telescopes, CSV files with time-series photometry data, and JSON
+								formatted light curves. Our platform supports data from Kepler,
+								TESS, and ground-based surveys. We also provide pre-processed
+								datasets from NASA archives for training and testing your
+								models.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item" data-faq="2">
+						<button class="faq-question">
+							<span>Is the platform suitable for educational purposes?</span>
+							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M6 9l6 6 6-6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-divider"></div>
+							<p>
+								Absolutely! Our Classroom feature is specifically designed for
+								students and educators. It includes interactive tutorials,
+								guided projects, and step-by-step explanations of machine
+								learning concepts. Whether you're a high school student learning
+								about exoplanets or a graduate student studying ML applications
+								in astronomy, our platform scales to your level.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item" data-faq="3">
+						<button class="faq-question">
+							<span>Can I export my trained models?</span>
+							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M6 9l6 6 6-6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-divider"></div>
+							<p>
+								Yes! You can export your trained models in multiple formats
+								including TensorFlow SavedModel, PyTorch (.pth), ONNX, and even
+								as Docker containers for deployment. We also provide API
+								endpoints so you can integrate your models into your own
+								applications or research workflows.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item" data-faq="4">
+						<button class="faq-question">
+							<span
+								>What's the difference between Playground and Classroom?</span
+							>
+							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M6 9l6 6 6-6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-divider"></div>
+							<p>
+								Playground is for quick analysis using our pre-trained models -
+								perfect for researchers who want immediate results. Classroom is
+								for learning and building your own models from scratch, with
+								guided tutorials and educational content. Think of Playground as
+								the 'production' environment and Classroom as the 'learning
+								lab'.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="faq-contact">
+					<p class="faq-contact-text">Still have questions?</p>
+					<button class="btn-primary">Contact Support</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer" id="about">
+			<div class="container">
+				<div class="footer-content">
+					<div class="footer-brand">
+						<h4 class="footer-title">Exchron</h4>
+						<p class="footer-email">info.exchron@gmail.com</p>
+					</div>
+
+					<div class="footer-links">
+						<div class="footer-column">
+							<h5 class="footer-column-title">Our Models</h5>
+							<ul class="footer-list">
+								<li><a href="#" class="footer-link">Exchron DNN</a></li>
+								<li><a href="#" class="footer-link">Transit Classifier</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-column" id="docs">
+							<h5 class="footer-column-title">Learn</h5>
+							<ul class="footer-list">
+								<li><a href="#" class="footer-link">Documentation</a></li>
+								<li>
+									<a href="#playground" class="footer-link">Playground</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-column">
+							<h5 class="footer-column-title">Community</h5>
+							<ul class="footer-list">
+								<li><a href="#" class="footer-link">GitHub</a></li>
+								<li><a href="#" class="footer-link">Discord</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<p class="footer-copyright">
+						© 2025 Exchron. NASA Space Apps Challenge Project. All Rights
+						Reserved
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
