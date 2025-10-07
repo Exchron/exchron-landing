@@ -15,7 +15,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="assests/favicon.ico" />
 	</head>
 	<body>
 		<!-- Header -->
@@ -23,11 +23,7 @@
 			<div class="header-content">
 				<div class="logo-section">
 					<div class="logo-container">
-						<img
-							src="public/placeholder-logo.svg"
-							alt="Exchron Logo"
-							class="logo-image"
-						/>
+						<img src="assests/Logo.png" alt="Exchron Logo" class="logo-image" />
 					</div>
 					<h1 class="logo-text">Exchron</h1>
 				</div>
@@ -37,10 +33,21 @@
 					<span class="hamburger-line"></span>
 				</button>
 				<nav class="nav">
-					<a href="#about" class="nav-link">About</a>
+					<a href="#playground" class="nav-link">About</a>
 					<a href="#team" class="nav-link">Team</a>
-					<a href="#docs" class="nav-link">Documentation</a>
-					<a href="#playground" class="nav-cta">Playground</a>
+					<a href="https://docs.exchronai.earth" target="_blank" class="nav-link nav-external">
+						Documentation
+						<svg class="external-icon" viewBox="0 0 24 24" fill="none">
+							<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="https://learn.exchronai.earth" target="_blank" class="nav-link nav-external">
+						Learn
+						<svg class="external-icon" viewBox="0 0 24 24" fill="none">
+							<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+					<a href="https://dashboard.exchronai.earth" target="_blank" class="nav-cta">Get Started</a>
 				</nav>
 			</div>
 		</header>
@@ -65,19 +72,17 @@
 			</p>
 
 			<div class="hero-buttons animate-fade-in-up animation-delay-400">
-				<button class="btn-secondary">
+				<a href="https://docs.exchronai.earth" target="_blank" class="btn-secondary">
 					See Documentation
-					<img src="public/arrow-outward.svg" alt="Arrow" class="btn-icon" />
-				</button>
-				<button class="btn-primary">Get Started</button>
+					<svg class="btn-icon external-icon" viewBox="0 0 24 24" fill="none">
+						<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+				<a href="https://dashboard.exchronai.earth" target="_blank" class="btn-primary">Get Started</a>
 			</div>
 
 			<div class="hero-image animate-fade-in-up animation-delay-600">
-				<img
-					src="public/dashboard-placeholder.svg"
-					alt="Exchron Dashboard"
-					class="dashboard-image"
-				/>
+				<img src="assests/ss1.png" alt="Dashboard Screenshot" class="dashboard-image" />
 			</div>
 		</section>
 
@@ -107,7 +112,7 @@
 						<div class="feature-number">1</div>
 						<h4 class="feature-title">Select a model from our library</h4>
 						<p class="feature-desc">
-							Choose from CNN, RNN, or Transformer models
+							Choose from CNN, DNN, or Classical models
 						</p>
 					</div>
 					<div
@@ -180,7 +185,7 @@
 						<div class="feature-number classroom-number">2</div>
 						<h4 class="feature-title">Select ML algorithm</h4>
 						<p class="feature-desc">
-							Decision trees, neural networks, or ensemble methods
+							Random forests, neural networks, and more
 						</p>
 					</div>
 					<div
@@ -222,7 +227,7 @@
 						<div class="key-feature-icon">🎯</div>
 						<h4 class="key-feature-title">Interactive Models</h4>
 						<p class="key-feature-desc">
-							Build and train models with our intuitive drag-and-drop interface.
+							Build and train models with our intuitive interface.
 							Real-time feedback helps you understand each step.
 						</p>
 					</div>
@@ -380,21 +385,21 @@
 							<div class="tech-spec-icon">⚡</div>
 							<h5 class="tech-spec-title">Processing Speed</h5>
 							<p class="tech-spec-desc">
-								&lt; 5 seconds per light curve classification
+								&lt; 4 seconds per light curve classification
 							</p>
 						</div>
 						<div class="tech-spec">
 							<div class="tech-spec-icon">🎯</div>
 							<h5 class="tech-spec-title">Accuracy</h5>
 							<p class="tech-spec-desc">
-								97.3% accuracy on NASA validation dataset
+								more than 90% accuracy on NASA validation dataset
 							</p>
 						</div>
 						<div class="tech-spec">
 							<div class="tech-spec-icon">🔧</div>
 							<h5 class="tech-spec-title">Compatibility</h5>
 							<p class="tech-spec-desc">
-								Supports FITS, CSV, and JSON data formats
+								Supports multiple data input methods and formats
 							</p>
 						</div>
 					</div>
@@ -408,10 +413,18 @@
 				<h3 class="in-action-title">In Action</h3>
 
 				<div class="demo-container">
-					<div class="demo-image demo-1"></div>
-					<div class="demo-image demo-2"></div>
-					<div class="demo-image demo-3"></div>
-					<div class="demo-image demo-4"></div>
+					<div class="demo-image demo-1">
+						<img src="assests/img1.jpg" alt="Exoplanet Analysis Dashboard" class="demo-img">
+					</div>
+					<div class="demo-image demo-2">
+						<img src="assests/img2.jpg" alt="Machine Learning Model Training" class="demo-img">
+					</div>
+					<div class="demo-image demo-3">
+						<img src="assests/img3.jpg" alt="Data Visualization Interface" class="demo-img">
+					</div>
+					<div class="demo-image demo-4">
+						<img src="assests/img4.jpg" alt="Results and Classification" class="demo-img">
+					</div>
 				</div>
 			</div>
 		</section>
@@ -424,12 +437,9 @@
 				<div class="team-members">
 					<div class="team-member">
 						<div class="member-photo">
-							<img src="public/team-circle.svg" alt="" class="team-circle" />
-							<img
-								src="public/profile-placeholder.svg"
-								alt="Navida Jayaweera"
-								class="profile-image"
-							/>
+							<div class="profile-circle">
+								<img src="assests/profile1.jpg" alt="Navida Jayaweera" class="profile-image" />
+							</div>
 						</div>
 						<h4 class="member-name">Navida Jayaweera</h4>
 						<p class="member-desc">
@@ -439,14 +449,11 @@
 					</div>
 					<div class="team-member">
 						<div class="member-photo">
-							<img src="public/team-circle.svg" alt="" class="team-circle" />
-							<img
-								src="public/profile-placeholder.svg"
-								alt="Team Member"
-								class="profile-image"
-							/>
+							<div class="profile-circle">
+								<img src="assests/profile2.jpg" alt="Oshadha Shiro" class="profile-image" />
+							</div>
 						</div>
-						<h4 class="member-name">Team Member</h4>
+						<h4 class="member-name">Oshadha Shiro</h4>
 						<p class="member-desc">
 							Data Scientist<br />Exoplanet Researcher<br />ML Algorithm
 							Specialist
@@ -473,10 +480,7 @@
 				<div class="faq-container">
 					<div class="faq-item" data-faq="0">
 						<button class="faq-question">
-							<span
-								>How does the machine learning algorithm classify
-								exoplanets?</span
-							>
+							<span>What are the two main modes available in Exchron?</span>
 							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
 								<path
 									d="M6 9l6 6 6-6"
@@ -490,19 +494,14 @@
 						<div class="faq-answer">
 							<div class="faq-divider"></div>
 							<p>
-								Our ML algorithms use deep neural networks trained on NASA's
-								Kepler and TESS mission data. The system analyzes transit light
-								curves - the dimming patterns when a planet passes in front of
-								its star. We employ convolutional neural networks (CNNs) to
-								detect these subtle patterns and classify them as planetary
-								signals or false positives with 97.3% accuracy.
+								Exchron offers two distinct modes: <strong>Playground Mode</strong> for quick experimentation with pre-trained exoplanet classification models, and <strong>Classroom Mode</strong> for building and training custom models from scratch. Playground is perfect for immediate results and testing, while Classroom provides a comprehensive learning environment with guided tutorials.
 							</p>
 						</div>
 					</div>
 
 					<div class="faq-item" data-faq="1">
 						<button class="faq-question">
-							<span>What kind of data can I upload to the platform?</span>
+							<span>How does the Playground Mode workflow work?</span>
 							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
 								<path
 									d="M6 9l6 6 6-6"
@@ -516,19 +515,14 @@
 						<div class="faq-answer">
 							<div class="faq-divider"></div>
 							<p>
-								You can upload various formats including FITS files from space
-								telescopes, CSV files with time-series photometry data, and JSON
-								formatted light curves. Our platform supports data from Kepler,
-								TESS, and ground-based surveys. We also provide pre-processed
-								datasets from NASA archives for training and testing your
-								models.
+								Playground Mode follows a 4-step workflow: <strong>01 Overview</strong> (explore and select pre-trained models), <strong>02 Data Input</strong> (choose from preloaded data, manual entry, or file upload), <strong>03 Results</strong> (view predictions and performance metrics), and <strong>04 Enhance</strong> (improve model performance and provide feedback).
 							</p>
 						</div>
 					</div>
 
 					<div class="faq-item" data-faq="2">
 						<button class="faq-question">
-							<span>Is the platform suitable for educational purposes?</span>
+							<span>What data input options are available?</span>
 							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
 								<path
 									d="M6 9l6 6 6-6"
@@ -542,19 +536,14 @@
 						<div class="faq-answer">
 							<div class="faq-divider"></div>
 							<p>
-								Absolutely! Our Classroom feature is specifically designed for
-								students and educators. It includes interactive tutorials,
-								guided projects, and step-by-step explanations of machine
-								learning concepts. Whether you're a high school student learning
-								about exoplanets or a graduate student studying ML applications
-								in astronomy, our platform scales to your level.
+								You can input data through four methods: <strong>Preloaded Data</strong> (curated Kepler and TESS datasets), <strong>Manual Entry</strong> (interactive parameter sliders), <strong>Data Upload</strong> (CSV files up to 5MB), and <strong>Batch Processing</strong> (coming soon). We support Kepler Objects of Interest (4,892 samples) and TESS Objects of Interest (2,674 samples).
 							</p>
 						</div>
 					</div>
 
 					<div class="faq-item" data-faq="3">
 						<button class="faq-question">
-							<span>Can I export my trained models?</span>
+							<span>What can I do in Classroom Mode?</span>
 							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
 								<path
 									d="M6 9l6 6 6-6"
@@ -568,20 +557,14 @@
 						<div class="faq-answer">
 							<div class="faq-divider"></div>
 							<p>
-								Yes! You can export your trained models in multiple formats
-								including TensorFlow SavedModel, PyTorch (.pth), ONNX, and even
-								as Docker containers for deployment. We also provide API
-								endpoints so you can integrate your models into your own
-								applications or research workflows.
+								Classroom Mode provides a complete machine learning pipeline: <strong>Data Input</strong> (upload CSV files with automatic analysis), <strong>Model Selection</strong> (choose Neural Networks or Random Forest with hyperparameter tuning), <strong>Train & Validate</strong> (real-time training monitoring), and <strong>Test & Export</strong> (performance evaluation and model download).
 							</p>
 						</div>
 					</div>
 
 					<div class="faq-item" data-faq="4">
 						<button class="faq-question">
-							<span
-								>What's the difference between Playground and Classroom?</span
-							>
+							<span>What are the system requirements and data limitations?</span>
 							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
 								<path
 									d="M6 9l6 6 6-6"
@@ -595,12 +578,28 @@
 						<div class="faq-answer">
 							<div class="faq-divider"></div>
 							<p>
-								Playground is for quick analysis using our pre-trained models -
-								perfect for researchers who want immediate results. Classroom is
-								for learning and building your own models from scratch, with
-								guided tutorials and educational content. Think of Playground as
-								the 'production' environment and Classroom as the 'learning
-								lab'.
+								Exchron requires a modern browser with JavaScript enabled and 4GB+ RAM for optimal performance. Data uploads are limited to 10MB CSV files with up to 100,000 rows and 300 columns. All computation runs client-side, so no server connection is required after initial loading.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq-item" data-faq="5">
+						<button class="faq-question">
+							<span>How can I export my trained models?</span>
+							<svg class="faq-icon" viewBox="0 0 24 24" fill="none">
+								<path
+									d="M6 9l6 6 6-6"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<div class="faq-answer">
+							<div class="faq-divider"></div>
+							<p>
+								Models can be exported in multiple formats including TensorFlow.js and JSON. Export options include trained model files, metadata with training configuration, comprehensive performance reports with visualizations, and ready-to-use inference code snippets for deployment.
 							</p>
 						</div>
 					</div>
@@ -608,7 +607,7 @@
 
 				<div class="faq-contact">
 					<p class="faq-contact-text">Still have questions?</p>
-					<button class="btn-primary">Contact Support</button>
+					<a href="mailto:info.exchron@gmail.com" class="btn-primary">Contact Support</a>
 				</div>
 			</div>
 		</section>
@@ -624,28 +623,29 @@
 
 					<div class="footer-links">
 						<div class="footer-column">
-							<h5 class="footer-column-title">Our Models</h5>
+							<h5 class="footer-column-title">Use Exchron</h5>
 							<ul class="footer-list">
-								<li><a href="#" class="footer-link">Exchron DNN</a></li>
-								<li><a href="#" class="footer-link">Transit Classifier</a></li>
-							</ul>
-						</div>
-
-						<div class="footer-column" id="docs">
-							<h5 class="footer-column-title">Learn</h5>
-							<ul class="footer-list">
-								<li><a href="#" class="footer-link">Documentation</a></li>
-								<li>
-									<a href="#playground" class="footer-link">Playground</a>
-								</li>
+								<li><a href="https://learn.exchronai.earth" target="_blank" class="footer-link">Learn About Exoplanets</a></li>
+								<li><a href="https://docs.exchronai.earth" target="_blank" class="footer-link">Documentation</a></li>
+								<li><a href="https://dashboard.exchronai.earth" target="_blank" class="footer-link">Classification Dashboard</a></li>
 							</ul>
 						</div>
 
 						<div class="footer-column">
-							<h5 class="footer-column-title">Community</h5>
+							<h5 class="footer-column-title">Classification Models</h5>
 							<ul class="footer-list">
-								<li><a href="#" class="footer-link">GitHub</a></li>
-								<li><a href="#" class="footer-link">Discord</a></li>
+								<li><a href="https://github.com/Exchron/exchron-dnn" target="_blank" class="footer-link">Exchron DNN</a></li>
+								<li><a href="https://github.com/Exchron/exchron-cnn" target="_blank" class="footer-link">Exchron CNN</a></li>
+								<li><a href="https://github.com/Exchron/exchron-svm" target="_blank" class="footer-link">Exchron SVM</a></li>
+								<li><a href="https://github.com/Exchron/exchron-gb" target="_blank" class="footer-link">Exchron GB</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-column">
+							<h5 class="footer-column-title">More information</h5>
+							<ul class="footer-list">
+								<li><a href="https://github.com/Exchron" target="_blank" class="footer-link">Github</a></li>
+								<li><a href="https://www.spaceappschallenge.org/2025/find-a-team/exchron1/" target="_blank" class="footer-link">Space Apps 2025</a></li>
 							</ul>
 						</div>
 					</div>

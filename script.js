@@ -129,11 +129,45 @@ document.head.appendChild(style);
 
 // Mobile menu toggle (if needed in future)
 function toggleMobileMenu() {
-	const nav = document.querySelector('.nav');
-	nav.classList.toggle('mobile-open');
+    const nav = document.querySelector('.nav');
+    const overlay = document.querySelector('.nav-overlay');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    
+    nav.classList.toggle('mobile-open');
+    overlay.classList.toggle('active');
+    toggle.classList.toggle('active');
 }
 
-// Mobile Menu Functionality
+// Mobile menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('.nav');
+    const overlay = document.querySelector('.nav-overlay');
+    const navLinks = document.querySelectorAll('.nav-link, .nav-cta');
+    
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', toggleMobileMenu);
+    }
+    
+    if (overlay) {
+        overlay.addEventListener('click', function() {
+            nav.classList.remove('mobile-open');
+            overlay.classList.remove('active');
+            mobileToggle.classList.remove('active');
+        });
+    }
+    
+    // Close mobile menu when clicking nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('mobile-open');
+            overlay.classList.remove('active');
+            if (mobileToggle) {
+                mobileToggle.classList.remove('active');
+            }
+        });
+    });
+});// Mobile Menu Functionality
 document.addEventListener('DOMContentLoaded', function () {
 	const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 	const nav = document.querySelector('.nav');
@@ -191,30 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 });
 
-// Lazy loading for images
-document.addEventListener('DOMContentLoaded', function () {
-	const images = document.querySelectorAll('img');
-
-	const imageObserver = new IntersectionObserver((entries, observer) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				const img = entry.target;
-				img.style.opacity = '0';
-				img.style.transition = 'opacity 0.3s ease';
-
-				img.addEventListener('load', () => {
-					img.style.opacity = '1';
-				});
-
-				observer.unobserve(img);
-			}
-		});
-	});
-
-	images.forEach((img) => {
-		imageObserver.observe(img);
-	});
-});
+// Removed lazy loading and opacity manipulation for images to fix display issues
 
 // Form submission handlers (for future contact forms)
 function handleContactForm(event) {
