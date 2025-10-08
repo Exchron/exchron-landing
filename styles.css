@@ -1086,6 +1086,36 @@ html {
 	height: 100%;
 	object-fit: cover;
 }
+.member-name a {
+	color: #111827;
+	text-decoration: none;
+	border: 1px solid #e5e7eb;
+	padding: 8px 12px;
+	border-radius: 10px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	transition: all 0.2s ease;
+	background: #ffffff;
+}
+
+.member-name a:hover {
+	background: #f9fafb;
+	border-color: #d1d5db;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	transform: translateY(-1px);
+	text-decoration: none;
+}
+
+.member-name a:active {
+	transform: translateY(0);
+}
+
+.member-name a:focus-visible {
+	outline: 2px solid #000;
+	outline-offset: 3px;
+	border-color: #000;
+}
 .member-name {
 	font-size: 24px;
 	font-weight: 700;
@@ -1547,6 +1577,40 @@ html {
 		font-size: 16px;
 	}
 
+	/* Show In Action on mobile with stacked images */
+	.demo-container {
+		position: static;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		margin-bottom: 18px;
+	}
+
+	.demo-image {
+		position: static;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+		opacity: 1;
+		transform: none;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.demo-img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		display: block;
+	}
+
+	/* Slightly tighter member link padding on mobile */
+	.member-name a {
+		padding: 8px 10px;
+	}
+
 	.faq-question {
 		padding: 20px;
 	}
@@ -1736,6 +1800,11 @@ html {
 
 	.footer-copyright {
 		font-size: 14px;
+	}
+
+	/* Further tighten member link padding on small phones */
+	.member-name a {
+		padding: 6px 10px;
 	}
 }
 
